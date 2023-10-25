@@ -1,5 +1,17 @@
 .starred {
-  
+    width: inherit;
+
+    .movies-list{
+      display: flex;
+      justify-content: center;
+    }
+    h6 {
+      margin-bottom: 2rem;
+    }
+    .header{
+      font-size: 2rem;
+    }
+
     footer {
         margin-top: 50px;
 

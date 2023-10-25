@@ -12,10 +12,11 @@ const Starred = ({viewTrailer}) => {
     const dispatch = useDispatch()
 
   return (
+
     <div className="starred" data-testid="starred">
       {starred.starredMovies.length > 0 && (<div data-testid="starred-movies" className="starred-movies">
         <h6 className="header">Starred movies</h6>
-        <div className="row">
+        <div className="row movies-list">
         {starred.starredMovies.map((movie) => (
           <Movie 
             movie={movie} 
@@ -26,7 +27,7 @@ const Starred = ({viewTrailer}) => {
         </div>
 
         <footer className="text-center">
-          <button className="btn btn-primary" onClick={() => dispatch(clearAllStarred())}>Remove all starred</button>
+          <button className="custom-button" onClick={() => dispatch(clearAllStarred())}>Remove all starred</button>
         </footer>
       </div>)}
 
@@ -35,6 +36,7 @@ const Starred = ({viewTrailer}) => {
         <p>There are no starred movies.</p>
         <p>Go to <Link to='/'>Home</Link></p>
       </div>)}
+
     </div>
   )
 }

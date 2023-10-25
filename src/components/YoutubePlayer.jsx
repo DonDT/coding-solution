@@ -6,6 +6,8 @@ const YoutubePlayer = ({ videoKey }) => (<ReactPlayer
   controls={true}
   playing={true}
   data-testid="youtube-player"
+  width={'inherit'}
+  height={'inherit'}
 />);
 
 export default YoutubePlayer;

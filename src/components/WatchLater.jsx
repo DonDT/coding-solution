@@ -15,7 +15,7 @@ const WatchLater = ({viewTrailer}) => {
     <div className="starred" data-testid="watch-later-div">
       {watchLater.watchLaterMovies.length > 0 && (<div data-testid="watch-later-movies" className="starred-movies">
         <h6 className="header">Watch Later List</h6>
-        <div className="row">
+        <div className="row movies-list">
         {watchLater.watchLaterMovies.map((movie) => (
           <Movie 
             movie={movie} 
@@ -26,7 +26,7 @@ const WatchLater = ({viewTrailer}) => {
         </div>
 
         <footer className="text-center">
-          <button className="btn btn-primary" onClick={() => dispatch(remveAllWatchLater())}>Empty list</button>
+          <button className="custom-button" onClick={() => dispatch(remveAllWatchLater())}>Empty list</button>
         </footer>
       </div>)}
 

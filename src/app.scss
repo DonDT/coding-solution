@@ -4,6 +4,20 @@
   background: linear-gradient(0deg, #1CB5E0 20%, #050b45 100%) no-repeat;
 }
 
+.no-video-trailer{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    width: inherit;
+
+    h6{
+      font-size: 2rem;
+      color: white;
+    }
+}
+
 :root, 
 .App {
   text-align: center;
